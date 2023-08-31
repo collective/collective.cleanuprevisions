@@ -10,8 +10,7 @@
     name="clean-revisions"
     for="*"
     class=".clean_revisions.CleanRevisions"
-    permission="zope2.View"
+    permission="cmf.ManagePortal"
     layer="collective.cleanuprevisions.interfaces.ICollectiveCleanuprevisionsLayer"
     />
-
 </configure>
