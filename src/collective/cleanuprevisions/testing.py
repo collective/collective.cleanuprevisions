@@ -19,11 +19,12 @@ class CollectiveCleanuprevisionsLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=collective.cleanuprevisions)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.cleanuprevisions:default')
+        applyProfile(portal, "collective.cleanuprevisions:default")
 
 
 COLLECTIVE_CLEANUPREVISIONS_FIXTURE = CollectiveCleanuprevisionsLayer()
@@ -31,13 +32,13 @@ COLLECTIVE_CLEANUPREVISIONS_FIXTURE = CollectiveCleanuprevisionsLayer()
 
 COLLECTIVE_CLEANUPREVISIONS_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_CLEANUPREVISIONS_FIXTURE,),
-    name='CollectiveCleanuprevisionsLayer:IntegrationTesting',
+    name="CollectiveCleanuprevisionsLayer:IntegrationTesting",
 )
 
 
 COLLECTIVE_CLEANUPREVISIONS_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_CLEANUPREVISIONS_FIXTURE,),
-    name='CollectiveCleanuprevisionsLayer:FunctionalTesting',
+    name="CollectiveCleanuprevisionsLayer:FunctionalTesting",
 )
 
 
@@ -47,5 +48,5 @@ COLLECTIVE_CLEANUPREVISIONS_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='CollectiveCleanuprevisionsLayer:AcceptanceTesting',
+    name="CollectiveCleanuprevisionsLayer:AcceptanceTesting",
 )
