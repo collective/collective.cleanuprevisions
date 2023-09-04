@@ -27,9 +27,9 @@
     :alt: License
 
 
-===========================
-collective.cleanuprevisions
-===========================
+===============================
+collective.cleanuprevisions WIP
+===============================
 
 Delete content revisions (versions)
 
