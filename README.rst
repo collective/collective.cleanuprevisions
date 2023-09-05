@@ -31,6 +31,10 @@
 collective.cleanuprevisions WIP
 ===============================
 
+DEPRECATED use: https://github.com/collective/collective.revisionmanager !
+
+
+
 Delete content revisions (versions)
 
 Features
